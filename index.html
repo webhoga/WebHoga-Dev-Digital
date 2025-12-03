@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0f24, #081732, #091f42);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Floating particles */
+        .particles div {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: float 10s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) scale(1); opacity: .3; }
+            50% { transform: translateY(-150px) scale(1.5); opacity: .7; }
+            100% { transform: translateY(0) scale(1); opacity: .3; }
+        }
+
+        /* Glass-card container */
+        .container {
+            width: 90%;
+            max-width: 750px;
+            padding: 40px;
+            text-align: center;
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 1.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #4fc3f7, #29b6f6, #0288d1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Floating particles -->
+    <div class="particles">
+        <div style="top:10%; left:20%; animation-delay:0s;"></div>
+        <div style="top:50%; left:70%; animation-delay:2s;"></div>
+        <div style="top:80%; left:30%; animation-delay:4s;"></div>
+        <div style="top:20%; left:80%; animation-delay:1s;"></div>
+        <div style="top:60%; left:10%; animation-delay:3s;"></div>
+    </div>
+
+    <div class="container">
+        <h1>We Are Coming Soon</h1>
+
+        <p>
+            Get ready — we have something coming that’s going to blow you away. 
+            Below is a sneak peek of what we offer. Check back often for our launch.
+        </p>
+
+        <p>
+            Our team has been working behind the scenes to bring you an experience 
+            like no other. Every detail has been carefully crafted to deliver something 
+            truly innovative, inspiring, and unforgettable. You won’t want to miss what’s next.
+        </p>
+
+        <p>
+            From exclusive features to cutting-edge design, we’re setting a new 
+            standard in what you can expect. Whether you’re here for creativity, 
+            quality, or something completely fresh, we’ve got it all waiting just for you.
+        </p>
+
+        <p>
+            The countdown has begun — and this is only the beginning. Stay tuned, spread 
+            the word, and be among the first to experience the future we’re about to unveil. 
+            Trust us, it’s worth the wait.
+        </p>
+
+        <div class="footer">© 2025 — Something Amazing Is Coming</div>
+    </div>
+</body>
+</html>
